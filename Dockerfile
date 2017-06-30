@@ -5,8 +5,7 @@ FROM debian:jessie
 MAINTAINER Vaibhav Swarnkar <vaibhavswarnkar@vostics.com> | Vostics
 
 #Update all repositories and install curl
-RUN apt-get -qq update && apt-get install -y curl \
-												google-cloud-sdk
+RUN apt-get -qq update && apt-get install -y curl
 
 #Remove and old version of docker installed
 RUN apt-get remove docker docker-engine docker.io
